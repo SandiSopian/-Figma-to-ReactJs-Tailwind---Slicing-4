@@ -6,10 +6,10 @@ import line from "../assets/Line 1.png";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <div className={`${open ? "w-72" : "w-10 -left-10"} scale-100 lg:left-0 p-2 lg:w-64 duration-700 h-screen relative bg-bgSidebar`}>
-      <img src={arrow} className={`lg:hidden absolute cursor-pointer -right-3 top-9 w-7 bg-white rounded-full ${!open && "rotate-180 -right-10 duration-700 "}`} onClick={() => setOpen(!open)} />
+    <div className={`${open ? "w-72" : "lg:w-72 w-10 -left-10"} scale-100 lg:left-0 p-2 lg:w-64 duration-700 h-screen relative`}>
+      <img src={arrow} className={`lg:hidden absolute cursor-pointer -right-3 top-9 w-7 rounded-full ${!open && "rotate-180 -right-10 duration-700 "}`} onClick={() => setOpen(!open)} />
 
-      <div className={`${!open && "hidden"} flex flex-col text-center items-center`}>
+      <div className={`${!open && "hidden"} flex flex-col text-center items-center `}>
         <img src={logo} alt="logo-butterfly" className="w-[40%] mt-10" />
         <h1 className="font-titleFont text-4xl text-titleColor mt-4 ">Rika & Yuuta</h1>
         <h4 className="font-textFont text-sm my-6">02.12.2022</h4>

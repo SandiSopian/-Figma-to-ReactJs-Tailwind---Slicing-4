@@ -6,7 +6,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="flex">
-      <div>
+      <div className="bg-bgSidebar">
         <Sidebar />
       </div>
       <div className="container">
