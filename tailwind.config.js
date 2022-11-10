@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -17,5 +19,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const utilities = {
+        ".bg-img": {
+          "background-image": "url(/src/assets/home-img1.jpg)",
+        },
+      };
+
+      addUtilities(utilities);
+    }),
+  ],
 };
