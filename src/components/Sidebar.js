@@ -11,7 +11,7 @@ const Sidebar = () => {
         <div className={`${!open && "hidden lg:flex"} flex flex-col text-center items-center justify-center m-auto `}>
           <img src={logo} alt="logo-butterfly" className="w-[40%] mt-10" />
           <h1 className="font-titleFont text-4xl text-titleColor mt-4 ">Rika & Yuuta</h1>
-          <h4 className="font-textFont text-sm my-6">02.12.2022</h4>
+          <h4 className="text-sm my-6">02.12.2022</h4>
 
           <div className="flex flex-col text-sm m-2 gap-2 ">
             <a className="" href="#home">
@@ -39,7 +39,7 @@ const Sidebar = () => {
 
           <img src={line} alt="" className="w-[0.8%] m-2" />
 
-          <div className="font-subtextFont text-sm opacity-70 leading-loose">
+          <div className="font-mono text-sm opacity-70 leading-loose">
             <h4>Rika & Yuuta wedding</h4>
             <h4>02 Desember 2022, Bandung</h4>
           </div>

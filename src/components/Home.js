@@ -3,8 +3,8 @@ import logoMail from "../assets/mail.svg";
 
 const Home = () => {
   return (
-    <>
-      <div id="home" className="h-screen overflow-hidden bg-img bg-cover flex flex-col">
+    <section id="home">
+      <div className="h-screen overflow-hidden bg-img bg-cover flex flex-col">
         <div className="flex flex-col justify-center text-center items-center mt-36 ml-36">
           <h1 className="text-8xl lg:text-9xl font-titleFont opacity-70">Rika & Yuuta</h1>
           <h4 className="font-textFont text-xl mt-7 lg:text-white">Akan segera melaksanakan pernikahan</h4>
@@ -22,7 +22,7 @@ const Home = () => {
           </span>
         </div>
       </div>
-    </>
+    </section>
   );
 
   // Function untuk menghitung waktu mundur

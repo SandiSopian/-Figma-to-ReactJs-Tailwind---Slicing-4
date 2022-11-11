@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["Cormorant Garamond", "ui-sans-serif", "system-ui"],
+        mono: ["Nunito Sans", "ui-sans-serif", "system-ui"],
         titleFont: ["Alex Brush", "ui-sans-serif", "system-ui"],
-        textFont: ["Cormorant Garamond", "ui-sans-serif", "system-ui"],
-        subtextFont: ["Nunito Sans", "ui-sans-serif", "system-ui"],
       },
       colors: {
         bgDefault: "#F1F6FF",

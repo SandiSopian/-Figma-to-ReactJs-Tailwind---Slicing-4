@@ -1,13 +1,73 @@
 import React from "react";
 import bismillah from "../assets/bismillah-img.png";
+import profile1 from "../assets/Ellipse1.png";
+import profile2 from "../assets/Ellipse2.png";
+import instagram from "../assets/instagram.svg";
+import twitter from "../assets/twitter.svg";
 
 const Mempelai = () => {
   return (
-    <div id="mempelai">
-      <div>
-        <img src={bismillah} alt="" />
+    <section id="mempelai" className="h-screen bg-bgDefault">
+      <div className="flex flex-col justify-center text-center items-center">
+        <div className="ml-[450px]">
+          <img src={bismillah} alt="" className="w-[70%] -mt-20" />
+        </div>
+
+        <div className="ml-[200px] justify-center leading-loose text-xl">
+          <p className="-mt-12">Assalamualaikum Warahmatullah Wabarakatuh</p>
+          <p className="mt-4">Dengan Rahmat Allah yang Maha Kuasa </p>
+          <p>InsyaAllah kami akan melangsungkan pernikahan</p>
+          <p>pada: </p>
+          <p className="text-[#5A4424] font-bold m-2">Sabtu, 02 Desember 2022</p>
+        </div>
       </div>
-    </div>
+
+      <div className="ml-[200px] flex flex-shrink items-center justify-evenly">
+        <div className="flex border my-2 bg-white shadow-md rounded-sm pr-6 py-2">
+          <div className="w-8/12 flex flex-col m-2 text-end">
+            <p className="font-semibold font-mono text-xl">Rika Takanashi S.E</p>
+            <p className="font-titleFont text-titleColor text-2xl">Rika</p>
+            <div className="font-mono">
+              <p>Sarjana Ekonomi yang</p>
+              <p>berprofesi di bidang property</p>
+            </div>
+            <div className="flex justify-end gap-6 mt-6">
+              <a href="https://www.twitter.com">
+                <img src={twitter} alt="" />
+              </a>
+              <a href="https://www.instagram.com">
+                <img src={instagram} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="w-4/12">
+            <img src={profile1} alt="" />
+          </div>
+        </div>
+
+        <div className="flex border my-2 bg-white shadow-md rounded-sm pl-6 py-2">
+          <div className="w-4/12">
+            <img src={profile2} alt="" />
+          </div>
+          <div className="w-8/12 flex flex-col m-2 text-start">
+            <p className="font-semibold font-mono text-xl">Yuuta Hoshi S.E</p>
+            <p className="font-titleFont text-titleColor text-2xl">Yuuta</p>
+            <div className="font-mono">
+              <p>Sarjana Ekonomi yang</p>
+              <p>berprofesi di bidang property</p>
+            </div>
+            <div className="flex justify-start gap-6 mt-6">
+              <a href="https://www.instagram.com">
+                <img src={instagram} alt="" />
+              </a>
+              <a href="https://www.twitter.com">
+                <img src={twitter} alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
