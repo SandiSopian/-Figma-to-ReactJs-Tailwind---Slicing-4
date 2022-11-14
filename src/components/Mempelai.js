@@ -15,10 +15,10 @@ const Mempelai = () => {
 
         <div className="ml-[200px] justify-center leading-loose text-xl">
           <p className="-mt-12">Assalamualaikum Warahmatullah Wabarakatuh</p>
-          <p className="mt-4">Dengan Rahmat Allah yang Maha Kuasa </p>
+          <p className="mt-2">Dengan Rahmat Allah yang Maha Kuasa </p>
           <p>InsyaAllah kami akan melangsungkan pernikahan</p>
           <p>pada: </p>
-          <p className="text-[#5A4424] font-bold m-2">Sabtu, 02 Desember 2022</p>
+          <p className="text-[#5A4424] font-bold m-1">Sabtu, 02 Desember 2022</p>
         </div>
       </div>
 

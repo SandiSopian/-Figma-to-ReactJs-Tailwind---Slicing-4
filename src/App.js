@@ -3,6 +3,8 @@ import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import Mempelai from "./components/Mempelai";
 import CeritaCinta from "./components/CeritaCinta";
+import Undangan from "./components/Undangan";
+import Lokasi from "./components/Lokasi";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Home />
         <Mempelai />
         <CeritaCinta />
+        <Undangan />
+        <Lokasi />
       </div>
     </div>
   );
