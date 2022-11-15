@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
-@import url("https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css");
 
 @tailwind base;
 @tailwind components;

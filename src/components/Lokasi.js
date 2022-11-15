@@ -1,5 +1,6 @@
 import React from "react";
 import IconLoc from "../assets/map-pin.svg";
+import LeafletMap from "./LeafletMap";
 
 const Lokasi = () => {
   return (
@@ -24,14 +25,16 @@ const Lokasi = () => {
         </div>
 
         <div>
-          <button className="bg-[#8CA4B9] py-4 px-6 flex gap-2 rounded-lg text-white">
+          <button className="bg-[#8CA4B9] py-4 px-6 flex gap-2 rounded-lg text-white mt-2 mb-4">
             <img src={IconLoc} alt="Icon Location" />
-            Buka Lokasi
+            <a href="https://goo.gl/maps/dszEfSoRaczBvbEK7">Buka Lokasi</a>
           </button>
         </div>
       </div>
 
-      <div></div>
+      <div classname="mt-4">
+        <LeafletMap />
+      </div>
     </section>
   );
 };

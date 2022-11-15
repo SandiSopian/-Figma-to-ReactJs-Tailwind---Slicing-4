@@ -5,7 +5,7 @@ const Undangan = () => {
     <section id="undangan" className="bg-bgDefault h-screen p-2">
       <div className="ml-[250px]">
         <div>
-          <h1 className="font-titleFont text-titleColor text-4xl mt-6">Undangan dan Acara</h1>
+          <h1 className="font-titleFont text-titleColor text-4xl m-2">Undangan dan Acara</h1>
         </div>
 
         <div className="grid grid-cols-2 gap-6 mr-32 mt-6">

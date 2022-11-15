@@ -5,6 +5,7 @@ import Mempelai from "./components/Mempelai";
 import CeritaCinta from "./components/CeritaCinta";
 import Undangan from "./components/Undangan";
 import Lokasi from "./components/Lokasi";
+import PhotoGaleri from "./components/PhotoGaleri";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <CeritaCinta />
         <Undangan />
         <Lokasi />
+        <PhotoGaleri />
       </div>
     </div>
   );
