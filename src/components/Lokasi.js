@@ -32,7 +32,7 @@ const Lokasi = () => {
         </div>
       </div>
 
-      <div classname="mt-4">
+      <div className="mt-4">
         <LeafletMap />
       </div>
     </section>

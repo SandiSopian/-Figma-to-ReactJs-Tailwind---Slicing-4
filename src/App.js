@@ -6,6 +6,8 @@ import CeritaCinta from "./components/CeritaCinta";
 import Undangan from "./components/Undangan";
 import Lokasi from "./components/Lokasi";
 import PhotoGaleri from "./components/PhotoGaleri";
+import DoaDanUcapan from "./components/DoaDanUcapan";
+import KirimUcapan from "./components/KirimUcapan";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Undangan />
         <Lokasi />
         <PhotoGaleri />
+        <DoaDanUcapan />
+        <KirimUcapan />
       </div>
     </div>
   );

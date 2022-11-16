@@ -1,0 +1,25 @@
+{
+  "kartuUcapan": [
+    {
+      "id": 1,
+      "nama": "Arif",
+      "lokasi": "Lembang",
+      "tanggal": "jumat, 12 nov 2022",
+      "pesan": "Selamat menjalai hidup baru"
+    },
+    {
+      "id": 2,
+      "nama": "Arif",
+      "lokasi": "Lembang",
+      "tanggal": "jumat, 12 nov 2022",
+      "pesan": "Selamat menjalai hidup baru"
+    },
+    {
+      "id": 3,
+      "nama": "fdsds",
+      "alamat": "dgdfd",
+      "email": "",
+      "pesan": "qwetfd"
+    }
+  ]
+}
