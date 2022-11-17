@@ -2,24 +2,45 @@
   "kartuUcapan": [
     {
       "id": 1,
-      "nama": "Arif",
-      "lokasi": "Lembang",
+      "nama": "Pertamax",
+      "lokasi": "Pom bensin",
       "tanggal": "jumat, 12 nov 2022",
-      "pesan": "Selamat menjalai hidup baru"
+      "pesan": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum pariatur nihil dolores dicta aliquam illo id dignissimos error veniam recusandae nam doloribus eius aspernatur, reprehenderit voluptatum quasi itaque commodi dolore provident possimus corrupti, repellat rerum natus alias? Sint, voluptatibus at, cupiditate laborum tenetur labore officia molestias ipsum, ipsam earum dicta?"
     },
     {
       "id": 2,
-      "nama": "Arif",
-      "lokasi": "Lembang",
-      "tanggal": "jumat, 12 nov 2022",
-      "pesan": "Selamat menjalai hidup baru"
+      "nama": "Hirman",
+      "alamat": "Ujung Kulon",
+      "email": "",
+      "pesan": "selamat ya anjir"
     },
     {
-      "id": 3,
-      "nama": "fdsds",
-      "alamat": "dgdfd",
+      "id": 1,
+      "nama": "Pertamax",
+      "lokasi": "Pom bensin",
+      "tanggal": "jumat, 12 nov 2022",
+      "pesan": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum pariatur nihil dolores dicta aliquam illo id dignissimos error veniam recusandae nam doloribus eius aspernatur, reprehenderit voluptatum quasi itaque commodi dolore provident possimus corrupti, repellat rerum natus alias? Sint, voluptatibus at, cupiditate laborum tenetur labore officia molestias ipsum, ipsam earum dicta?"
+    },
+    {
+      "id": 2,
+      "nama": "Hirman",
+      "alamat": "Ujung Kulon",
       "email": "",
-      "pesan": "qwetfd"
+      "pesan": "selamat ya anjir"
+    },
+    {
+      "id": 1,
+      "nama": "Pertamax",
+      "lokasi": "Pom bensin",
+      "tanggal": "jumat, 12 nov 2022",
+      "pesan": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum pariatur nihil dolores dicta aliquam illo id dignissimos error veniam recusandae nam doloribus eius aspernatur, reprehenderit voluptatum quasi itaque commodi dolore provident possimus corrupti, repellat rerum natus alias? Sint, voluptatibus at, cupiditate laborum tenetur labore officia molestias ipsum, ipsam earum dicta?"
+    },
+    {
+      "id": 2,
+      "nama": "Hirman",
+      "alamat": "Ujung Kulon",
+      "email": "",
+      "pesan": "selamat ya anjir"
     }
   ]
 }

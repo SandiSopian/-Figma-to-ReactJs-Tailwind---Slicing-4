@@ -22,6 +22,7 @@ const KirimUcapan = () => {
     })
       .then((res) => {
         alert("Pesan telah tersimpan");
+        <div></div>;
         window.location.reload(false);
       })
       .catch((err) => {
@@ -47,7 +48,7 @@ const KirimUcapan = () => {
           {/* Input Nama */}
           <label>Nama</label>
           <div>
-            <input maxLength={50} type="text" required value={nama} onMouseDown={(e) => setValidation(true)} onChange={(e) => setNama(e.target.value)} className="bg-white border-2" placeholder="Tulis nama lengkap"></input>
+            <input maxLength={100} type="text" required value={nama} onMouseDown={(e) => setValidation(true)} onChange={(e) => setNama(e.target.value)} className="bg-white border-2" placeholder="Tulis nama lengkap"></input>
             <br />
             {nama.length == 0 && validation && <span className="text-red">Masukan nama</span>}
           </div>
@@ -55,7 +56,7 @@ const KirimUcapan = () => {
           {/* Input Alamat */}
           <label>Alamat</label>
           <div>
-            <input maxLength={50} type="text" required value={alamat} onMouseDown={(e) => setValidation(true)} onChange={(e) => setAlamat(e.target.value)} className="bg-white border-2" placeholder="Alamat anda"></input>
+            <input maxLength={100} type="text" required value={alamat} onMouseDown={(e) => setValidation(true)} onChange={(e) => setAlamat(e.target.value)} className="bg-white border-2" placeholder="Alamat anda"></input>
             <br />
             {alamat.length == 0 && validation && <span className="text-red">Masukan alamat</span>}
           </div>
@@ -63,7 +64,7 @@ const KirimUcapan = () => {
           {/* Input Email */}
           <label>Email</label>
           <div>
-            <input maxLength={50} type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-white border-2" placeholder="Alamat email (optional)"></input>
+            <input maxLength={100} type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-white border-2" placeholder="Alamat email (optional)"></input>
           </div>
 
           {/* Input Tanggal */}
@@ -74,7 +75,7 @@ const KirimUcapan = () => {
           <label>Pesan</label>
           <div>
             <input
-              maxLength={250}
+              maxLength={350}
               type="text"
               required
               value={pesan}
@@ -90,6 +91,8 @@ const KirimUcapan = () => {
           <div>
             <button type="submit">Kirim</button>
           </div>
+
+          <div></div>
         </form>
       </div>
     </section>

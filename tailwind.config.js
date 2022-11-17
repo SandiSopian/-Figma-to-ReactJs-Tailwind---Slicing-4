@@ -25,6 +25,11 @@ module.exports = {
         ".bg-img": {
           "background-image": "url(/src/assets/home-img1.jpg)",
         },
+        ".active": {
+          fontWeight: "bold",
+          transitionTimingFunction: "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+          transitionDuration: "75ms",
+        },
       };
 
       addUtilities(utilities);
