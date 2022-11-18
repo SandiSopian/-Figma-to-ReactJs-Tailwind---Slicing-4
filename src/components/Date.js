@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
 
 export default function Date() {
-  let jsonStr = moment().format("MMMM Do YYYY, h:mm:ss a");
-  console.log(jsonStr);
+  let day = "/Date(1558639712897)/";
+  let date = moment(day);
+  console.log(date.format("dddd, Do MMM YYYY, h:mm:ss A"));
+  return (
+    <>
+      <div>{date}</div>
+    </>
+  );
 
-  return <div>{jsonStr}</div>;
+  // let jsonStr = moment().format("MMMM Do YYYY, h:mm:ss a");
+  // console.log(jsonStr);
+
+  // return <div>{jsonStr}</div>;
 
   //   const d = new Date();
   //   const weekDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];

@@ -45,21 +45,21 @@ export default function Pagination() {
   const pageCount = Math.ceil(data.length / PER_PAGE);
 
   return (
-    <div className="flex flex-col items-start ">
-      <div className="grid grid-cols-2 grow gap-12">{currentPageData}</div>
+    <div className="flex flex-col items-start relative">
+      <div className="grid grid-cols-2 grow gap-12 mb-14">{currentPageData}</div>
 
-      <div>
+      <div className="absolute bottom-0 left-0">
         <ReactPaginate
-          previousLabel={"« Previous"}
-          nextLabel={"Next »"}
+          previousLabel={"← Previous"}
+          nextLabel={"Next →"}
           pageCount={pageCount}
           onPageChange={handlePageClick}
-          containerClassName={"pagination"}
-          previousLinkClassName={"pagination__Link"}
-          nextLinkClassName={"pagination__Link"}
-          disabledLinkClassName={"pagination__Link-disabled"}
-          activeLinkClassName={"pagination__Link--active"}
-          className="flex flex-row gap-6 mt-4 text-lg"
+          containerClassName={"pagination "}
+          previousLinkClassName={"font-semibold "}
+          nextLinkClassName={"font-semibold"}
+          disabledClassName={"disabled"}
+          activeClassName={"active font-bold text-xl border-b-2 rounded-md px-2 py-1 bg-blue-200 "}
+          className={`flex flex-row gap-5 mt-4 text-lg`}
         />
       </div>
     </div>
