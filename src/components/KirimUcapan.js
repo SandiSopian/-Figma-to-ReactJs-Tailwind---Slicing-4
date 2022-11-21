@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
-import Date from "./Date";
 
 const KirimUcapan = () => {
   const [id, setId] = useState("");

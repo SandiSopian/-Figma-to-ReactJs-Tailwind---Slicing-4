@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home">
       <div className="h-screen overflow-hidden bg-img bg-cover flex flex-col">
         <div className="flex flex-col justify-center text-center items-center mt-36 ml-36">
-          <h1 className="text-8xl lg:text-9xl font-titleFont opacity-70">Rika & Yuuta</h1>
+          <h1 className="text-8xl lg:text-9xl font-titleFont">Rika & Yuuta</h1>
           <h4 className="font-textFont text-xl mt-7 lg:text-white">Akan segera melaksanakan pernikahan</h4>
           <h4 className="font-textFont text-[#5A4424] lg:text-white text-2xl font-bold">Sabtu, 02 Desember 2022</h4>
         </div>
@@ -65,19 +65,19 @@ const Home = () => {
       <div>
         <div className="row">
           <ul className="flex gap-10 mt-24">
-            <li className="bg-white py-4 px-6  rounded-md shadow-lg opacity-50 font-bold">
+            <li className="bg-white py-4 px-6  rounded-md shadow-lg font-bold">
               <span id="days"></span>
               <p>Hari</p>
             </li>
-            <li className="bg-white py-4 px-6 rounded-md shadow-lg opacity-50 font-bold">
+            <li className="bg-white py-4 px-6 rounded-md shadow-lg font-bold">
               <span id="hours"></span>
               <p>Jam</p>
             </li>
-            <li className="bg-white py-4 px-6 rounded-md shadow-lg opacity-50 font-bold">
+            <li className="bg-white py-4 px-6 rounded-md shadow-lg font-bold">
               <span id="minutes"></span>
               <p>Menit</p>
             </li>
-            <li className="bg-white py-4 px-6 rounded-md shadow-lg opacity-50 font-bold">
+            <li className="bg-white py-4 px-6 rounded-md shadow-lg font-bold">
               <span id="seconds"></span>
               <p>Detik</p>
             </li>

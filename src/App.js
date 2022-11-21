@@ -11,11 +11,11 @@ import KirimUcapan from "./components/KirimUcapan";
 
 function App() {
   return (
-    <div className="flex">
-      <div className="bg-bgSidebar w-2/12 fixed">
+    <div className="bg-bgSidebar flex p-0">
+      <div className="lg:w-4/12 fixed ">
         <Sidebar />
       </div>
-      <div className="flex flex-col w-10/12 flex-grow ">
+      <div className="lg:w-8/12 flex-grow lg:ml-96">
         <Home />
         <Mempelai />
         <CeritaCinta />
