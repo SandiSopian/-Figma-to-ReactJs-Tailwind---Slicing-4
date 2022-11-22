@@ -7,9 +7,9 @@ import twitter from "../assets/twitter.svg";
 
 const Mempelai = () => {
   return (
-    <section id="mempelai" className="h-screen bg-bgDefault">
+    <section id="mempelai" className="bg-bgDefault ">
       <div className="flex flex-col justify-center text-center items-center">
-        <div className="ml-[450px]">
+        <div className="lg:ml-[450px]">
           <img src={bismillah} alt="" className="w-[70%] -mt-20" />
         </div>
 

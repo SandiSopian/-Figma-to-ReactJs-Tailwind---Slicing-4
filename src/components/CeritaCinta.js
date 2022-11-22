@@ -3,7 +3,7 @@ import ceritaimg from "../assets/ceritacinta.png";
 
 const CeritaCinta = () => {
   return (
-    <section id="ceritacinta" className="ml-[250px] p-2 h-screen">
+    <section id="ceritacinta" className="lg:ml-[250px] p-2">
       <h1 className="font-titleFont text-titleColor text-4xl m-2">Cerita Cinta</h1>
       <div className="grid grid-cols-2 gap-2">
         <div className="bg-bgDefault shadow-md rounded p-4">

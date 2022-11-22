@@ -2,8 +2,8 @@ import React from "react";
 
 const Undangan = () => {
   return (
-    <section id="undangan" className="bg-bgDefault h-screen p-2">
-      <div className="ml-[250px]">
+    <section id="undangan" className="bg-bgDefault p-2">
+      <div className="lg:ml-[250px]">
         <div>
           <h1 className="font-titleFont text-titleColor text-4xl m-2">Undangan dan Acara</h1>
         </div>

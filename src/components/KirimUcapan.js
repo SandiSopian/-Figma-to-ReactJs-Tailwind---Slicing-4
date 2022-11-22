@@ -33,7 +33,7 @@ const KirimUcapan = () => {
 
   return (
     <section id="kirimdoadanucapan" className="bg-bgDefault h-screen p-2">
-      <div className="ml-[250px]">
+      <div className="lg:ml-[250px]">
         <div>
           <h1 className="font-titleFont text-titleColor text-4xl m-2">Kirim Do'a dan Ucapan</h1>
         </div>

@@ -11,19 +11,22 @@ import KirimUcapan from "./components/KirimUcapan";
 
 function App() {
   return (
-    <div className="bg-bgSidebar flex p-0">
-      <div className="lg:w-4/12 fixed ">
-        <Sidebar />
-      </div>
-      <div className="lg:w-8/12 flex-grow lg:ml-96">
-        <Home />
-        <Mempelai />
-        <CeritaCinta />
-        <Undangan />
-        <Lokasi />
-        <PhotoGaleri />
-        <DoaDanUcapan />
-        <KirimUcapan />
+    <div className="h-[650px] overflow-hidden">
+      <div className="flex fixed ">
+        <div className="lg:bg-bgSidebar">
+          <Sidebar />
+        </div>
+
+        <div className="overflow-y-scroll h-screen">
+          <Home />
+          <Mempelai />
+          <CeritaCinta />
+          <Undangan />
+          <Lokasi />
+          <PhotoGaleri />
+          <DoaDanUcapan />
+          <KirimUcapan />
+        </div>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ import galleri4 from "../assets/photogaleri4.png";
 
 const PhotoGaleri = () => {
   return (
-    <section id="photogaleri" className="bg-bgDefault h-screen p-2">
-      <div className="ml-[250px]">
+    <section id="photogaleri" className="bg-bgDefault p-2">
+      <div className="lg:ml-[250px]">
         <div>
           <h1 className="font-titleFont text-titleColor text-4xl m-2">Photo Galeri</h1>
         </div>

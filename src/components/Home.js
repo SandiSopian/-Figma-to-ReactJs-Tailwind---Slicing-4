@@ -3,22 +3,24 @@ import logoMail from "../assets/mail.svg";
 
 const Home = () => {
   return (
-    <section id="home">
-      <div className="h-screen overflow-hidden bg-img bg-cover flex flex-col">
-        <div className="flex flex-col justify-center text-center items-center mt-36 ml-36">
-          <h1 className="text-8xl lg:text-9xl font-titleFont">Rika & Yuuta</h1>
-          <h4 className="font-textFont text-xl mt-7 lg:text-white">Akan segera melaksanakan pernikahan</h4>
+    <section id="home" className="lg:ml-[250px] w-[60%] lg:w-full">
+      <div className="h-screen overflow-hidden bg-img bg-cover bg-center flex flex-col">
+        <div className="flex flex-col justify-center text-center items-center mt-40 lg:mt-36 lg:ml-36">
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-titleFont">Rika & Yuuta</h1>
+          <h4 className="font-textFont text-xl mt-10 lg:mt-7 lg:text-white">Akan segera melaksanakan pernikahan</h4>
           <h4 className="font-textFont text-[#5A4424] lg:text-white text-2xl font-bold">Sabtu, 02 Desember 2022</h4>
         </div>
 
-        <div className="flex justify-center text-center items-center ml-36 -mt-12">
+        <div className="flex justify-center text-center items-center lg:ml-36 -mt-12">
           <Countdown />
         </div>
 
-        <div className="flex justify-center ml-36 mt-8">
-          <span className="bg-[#8CA4B9] flex justify-center text-center items-center gap-2 py-3 px-4 border-2 rounded-lg border-white text-white font-textFont italic">
+        <div className="flex justify-center lg:ml-36 mt-12 lg:mt-8">
+          <span className="bg-[#8CA4B9] flex justify-center text-center items-center gap-2 py-3 px-4 border-2 rounded-lg border-white text-white font-textFont italic hover:bg-[#1a4c77] ">
             <img src={logoMail} alt="logo" />
-            <span>Buka Undangan</span>
+            <span>
+              <a href="#mempelai">Buka Undangan</a>
+            </span>
           </span>
         </div>
       </div>
@@ -64,7 +66,7 @@ const Home = () => {
     return (
       <div>
         <div className="row">
-          <ul className="flex gap-10 mt-24">
+          <ul className="flex gap-2 lg:gap-10 mt-32 lg:mt-24 flex-wrap ">
             <li className="bg-white py-4 px-6  rounded-md shadow-lg font-bold">
               <span id="days"></span>
               <p>Hari</p>

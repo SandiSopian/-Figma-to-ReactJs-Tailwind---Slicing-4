@@ -4,7 +4,7 @@ import LeafletMap from "./LeafletMap";
 
 const Lokasi = () => {
   return (
-    <section id="lokasi" className="ml-[250px] p-2 h-screen">
+    <section id="lokasi" className="lg:ml-[250px] p-2">
       <div>
         <div>
           <h1 className="font-titleFont text-titleColor text-4xl m-2">Peta Lokasi</h1>

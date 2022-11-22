@@ -6,9 +6,9 @@ import line from "../assets/Line 1.png";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <nav className="relative h-screen">
-      <div className={`${open ? " left-0" : "-left-full lg:block "} scale-100 lg:left-0 duration-700`}>
-        <div className={`${!open && "invisible lg:flex"} flex flex-col text-center items-center justify-center m-auto bg-white gap-24`}>
+    <nav className="p-0">
+      <div className={`${open ? "left-0 " : "-left-full hidden lg:block "} scale-100 lg:left-0 duration-700 `}>
+        <div className={`${!open && "invisible lg:flex"} flex flex-col text-center items-center justify-center m-auto bg-white lg:gap-0`}>
           <img src={logo} alt="logo-butterfly" className="w-[40%] mt-10" />
           <h1 className="font-titleFont text-4xl text-titleColor mt-4">Rika & Yuuta</h1>
           <h4 className="text-sm my-6">02.12.2022</h4>
@@ -47,7 +47,7 @@ const Sidebar = () => {
       </div>
 
       <div>
-        <img src={arrow} className={`lg:hidden absolute cursor-pointer sm:left-6 left-6 top-9 w-7 rounded-full z-20 ${!open && "rotate-180 duration-300  left-0 visible"}`} onClick={() => setOpen(!open)} />
+        <img src={arrow} className={`lg:hidden absolute cursor-pointer sm:left-6 left-6 top-9 w-7 rounded-full z-20 opacity-50 ${!open && "rotate-180 duration-300 visible"}`} onClick={() => setOpen(!open)} />
       </div>
     </nav>
   );
