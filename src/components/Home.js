@@ -3,19 +3,19 @@ import logoMail from "../assets/mail.svg";
 
 const Home = () => {
   return (
-    <section id="home" className="lg:ml-[250px] w-[60%] lg:w-full">
-      <div className="h-screen overflow-hidden bg-img bg-cover bg-center flex flex-col">
-        <div className="flex flex-col justify-center text-center items-center mt-40 lg:mt-36 lg:ml-36">
-          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-titleFont">Rika & Yuuta</h1>
+    <section id="home" className="w-[60%] sm:w-full">
+      <div className="h-screen overflow-hidden bg-img bg-cover bg-center flex flex-col text-center lg:-ml-24 xl:ml-0">
+        <div className="flex flex-col justify-center text-center items-center mt-40 lg:mt-36">
+          <h1 className="text-6xl sm:text-8xl font-titleFont">Rika & Yuuta</h1>
           <h4 className="font-textFont text-xl mt-10 lg:mt-7 lg:text-white">Akan segera melaksanakan pernikahan</h4>
           <h4 className="font-textFont text-[#5A4424] lg:text-white text-2xl font-bold">Sabtu, 02 Desember 2022</h4>
         </div>
 
-        <div className="flex justify-center text-center items-center lg:ml-36 -mt-12">
+        <div className="flex justify-center text-center items-center -mt-12">
           <Countdown />
         </div>
 
-        <div className="flex justify-center lg:ml-36 mt-12 lg:mt-8">
+        <div className="flex justify-center mt-12 lg:mt-24">
           <span className="bg-[#8CA4B9] flex justify-center text-center items-center gap-2 py-3 px-4 border-2 rounded-lg border-white text-white font-textFont italic hover:bg-[#1a4c77] ">
             <img src={logoMail} alt="logo" />
             <span>

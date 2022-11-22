@@ -6,9 +6,9 @@ import line from "../assets/Line 1.png";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <nav className="p-0">
-      <div className={`${open ? "left-0 " : "-left-full hidden lg:block "} scale-100 lg:left-0 duration-700 `}>
-        <div className={`${!open && "invisible lg:flex"} flex flex-col text-center items-center justify-center m-auto bg-white lg:gap-0`}>
+    <nav className="p-0 ">
+      <div className={`${open ? "left-0 w-[250px] " : "-left-full hidden lg:block "} scale-100 lg:left-0 duration-700 `}>
+        <div className="w-[250px] flex flex-col text-center items-center justify-center m-auto bg-white lg:gap-0">
           <img src={logo} alt="logo-butterfly" className="w-[40%] mt-10" />
           <h1 className="font-titleFont text-4xl text-titleColor mt-4">Rika & Yuuta</h1>
           <h4 className="text-sm my-6">02.12.2022</h4>
@@ -39,7 +39,7 @@ const Sidebar = () => {
 
           <img src={line} alt="" className="w-[0.8%] m-2" />
 
-          <div className="font-mono  text-sm opacity-70 leading-loose">
+          <div className="font-mono text-sm opacity-70 leading-loose mt-2 mb-4">
             <h4>Rika & Yuuta wedding</h4>
             <h4>02 Desember 2022, Bandung</h4>
           </div>

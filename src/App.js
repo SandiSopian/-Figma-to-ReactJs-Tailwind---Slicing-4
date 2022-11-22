@@ -12,7 +12,7 @@ import KirimUcapan from "./components/KirimUcapan";
 function App() {
   return (
     <div className="h-[650px] overflow-hidden">
-      <div className="flex fixed ">
+      <div className="flex fixed">
         <div className="lg:bg-bgSidebar">
           <Sidebar />
         </div>
