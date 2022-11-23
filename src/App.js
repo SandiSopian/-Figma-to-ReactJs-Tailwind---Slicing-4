@@ -17,7 +17,7 @@ function App() {
           <Sidebar />
         </div>
 
-        <div className="overflow-y-scroll h-screen">
+        <div className="overflow-y-scroll h-screen container">
           <Home />
           <Mempelai />
           <CeritaCinta />

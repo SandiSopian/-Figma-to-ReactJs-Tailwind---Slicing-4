@@ -4,13 +4,13 @@ import LeafletMap from "./LeafletMap";
 
 const Lokasi = () => {
   return (
-    <section id="lokasi" className="lg:ml-[250px] p-2">
+    <section id="lokasi" className="p-2 lg:pb-20">
       <div>
         <div>
-          <h1 className="font-titleFont text-titleColor text-4xl m-2">Peta Lokasi</h1>
+          <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-20 sm:ml-0">Peta Lokasi</h1>
         </div>
 
-        <div>
+        <div className="w-[60%] sm:w-full">
           <h4>
             Bertempat di Jl. Sumatera No.52 - 54, Citarum, Kec. Bandung Wetan,
             <br />
@@ -32,7 +32,7 @@ const Lokasi = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4 mb-16 w-[60%] sm:w-full md:w-[92%]">
         <LeafletMap />
       </div>
     </section>

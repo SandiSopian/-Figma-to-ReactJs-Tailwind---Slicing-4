@@ -7,21 +7,19 @@ import galleri4 from "../assets/photogaleri4.png";
 const PhotoGaleri = () => {
   return (
     <section id="photogaleri" className="bg-bgDefault p-2">
-      <div className="lg:ml-[250px]">
-        <div>
-          <h1 className="font-titleFont text-titleColor text-4xl m-2">Photo Galeri</h1>
-        </div>
+      <div>
+        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-24 sm:ml-0">Photo Galeri</h1>
+      </div>
 
-        <div>
-          <h4>Sebagian kenangan kami yang diabadikan dalam photo-photo penuh kebahagiaan</h4>
-        </div>
+      <div className="w-[60%] sm:w-full">
+        <h4>Sebagian kenangan kami yang diabadikan dalam photo-photo penuh kebahagiaan</h4>
+      </div>
 
-        <div className="grid grid-cols-2 gap-6 mt-2 justify-center">
-          <img src={galleri1} alt="" className="w-[60%] " />
-          <img src={galleri2} alt="" className="w-[60%] -ml-52" />
-          <img src={galleri3} alt="" className="w-[60%] " />
-          <img src={galleri4} alt="" className="w-[60%] -ml-52" />
-        </div>
+      <div className="grid sm:grid-cols-2 gap-6 lg:gap-2 xl:gap-4 mt-2 sm:mb-24 sm:p-6 lg:w-[90%] xl:w-full">
+        <img src={galleri1} alt="galeri1" className="w-[58%] sm:w-full xl:w-[70%] rounded-lg shadow-md xl:ml-24" />
+        <img src={galleri2} alt="galeri2" className="w-[58%] sm:w-full xl:w-[70%] rounded-lg shadow-md" />
+        <img src={galleri3} alt="galeri3" className="w-[58%] sm:w-full xl:w-[70%] rounded-lg shadow-md xl:ml-24 " />
+        <img src={galleri4} alt="galeri4" className="w-[58%] sm:w-full xl:w-[70%] rounded-lg shadow-md" />
       </div>
     </section>
   );

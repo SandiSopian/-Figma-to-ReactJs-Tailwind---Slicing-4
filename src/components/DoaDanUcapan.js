@@ -4,21 +4,19 @@ import Pagination from "./Pagination";
 const DoaDanUcapan = () => {
   return (
     <section id="doadanucapan" className="p-2">
-      <div className="lg:ml-[250px]">
-        <div>
-          <h1 className="font-titleFont text-titleColor text-4xl m-2">Doa dan Ucapan</h1>
-        </div>
+      <div>
+        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-12 sm:ml-0">Doa dan Ucapan</h1>
+      </div>
 
-        {/* Card Ucapan */}
-        <div>
-          <Pagination />
-        </div>
+      {/* Card Ucapan */}
+      <div>
+        <Pagination />
+      </div>
 
-        <div className="flex justify-center m-4">
-          <button className="bg-[#8CA4B9] py-4 px-6 flex gap-2 rounded-lg text-white m-6 hover:bg-[#1a4c77]">
-            <a href="#kirimdoadanucapan">Kirim Do'a dan Ucapan</a>
-          </button>
-        </div>
+      <div className="sm:flex sm:justify-center lg:m-4 ml-12 sm:ml-0 lg:mr-28 xl:mr-0">
+        <button className="bg-[#8CA4B9] py-4 px-6 flex gap-2 rounded-lg text-white m-6 hover:bg-[#1a4c77]">
+          <a href="#kirimdoadanucapan">Kirim Do'a dan Ucapan</a>
+        </button>
       </div>
     </section>
   );

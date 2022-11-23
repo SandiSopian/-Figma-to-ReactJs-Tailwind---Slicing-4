@@ -7,7 +7,7 @@ import twitter from "../assets/twitter.svg";
 
 const Mempelai = () => {
   return (
-    <section id="mempelai" className="bg-bgDefault w-[60%] sm:w-full sm:pb-10 md:p-12 lg:py-12 lg:-ml-8 xl:ml-0">
+    <section id="mempelai" className="bg-bgDefault w-[60%] sm:w-full sm:pb-10 md:p-16 lg:-ml-8 xl:ml-0">
       <div className="flex flex-col justify-center text-center items-center">
         <div>
           <img src={bismillah} alt="" className="w-[80%] md:w-[70%] xl:w-[60%] -mt-6 md:-mt-16 lg:-mt-24 xl:-mt-28 ml-8 sm:ml-16 md:ml-24 xl:ml-48" />
@@ -22,7 +22,7 @@ const Mempelai = () => {
         </div>
       </div>
 
-      <div className="mb-4 lg:ml-6 xl:ml-12 md:gap-6 sm:mt-2 flex flex-col sm:flex-row flex-shrink items-center justify-evenly lg:w-[90%] ">
+      <div className="lg:ml-6 xl:ml-12 md:gap-6 sm:mt-2 flex flex-col sm:flex-row flex-shrink items-center justify-evenly lg:w-[90%] ">
         <div className="flex border my-2 bg-white shadow-md rounded-sm pr-6 py-2">
           <div className="w-8/12 flex flex-col m-2 text-end">
             <p className="font-semibold font-mono text-xl">Rika Takanashi S.E</p>

@@ -29,8 +29,8 @@ export default function Pagination() {
   console.log("offset", offset);
 
   const currentPageData = data.slice(offset, offset + PER_PAGE).map((item) => (
-    <div className="grid justify-center break-all">
-      <div key={item.id} className="bg-bgDefault w-[400px] p-4 mx-auto border shadow-lg rounded-md leading-relaxed ">
+    <div className="justify-center break-all xl:text-md">
+      <div key={item.id} className="bg-bgDefault w-[340px] sm:w-[300px] md:w-[365px] xl:w-[480px] p-4 mx-auto border shadow-lg rounded-md leading-relaxed ">
         <div className="font-bold text-xl">{item.nama}</div>
         <div className="text-titleColor">
           <span className="text-black">di</span> {item.lokasi}
@@ -46,12 +46,12 @@ export default function Pagination() {
 
   return (
     <div className="flex flex-col items-start relative">
-      <div className="grid grid-cols-2 grow gap-12 mb-14">{currentPageData}</div>
+      <div className="grid sm:grid-cols-2 grow gap-2 sm:gap-6 md:gap-4 mb-14">{currentPageData}</div>
 
-      <div className="absolute bottom-0 left-0">
+      <div className="absolute bottom-0 sm:left-36 md:left-48 xl:left-80">
         <ReactPaginate
-          previousLabel={"← Previous"}
-          nextLabel={"Next →"}
+          previousLabel={"« Previous"}
+          nextLabel={"Next »"}
           pageCount={pageCount}
           onPageChange={handlePageClick}
           containerClassName={"pagination "}
@@ -59,7 +59,7 @@ export default function Pagination() {
           nextLinkClassName={"font-semibold"}
           disabledClassName={"disabled"}
           activeClassName={"active font-bold text-xl border-b-2 rounded-md px-2 py-1 bg-blue-200 "}
-          className={`flex flex-row gap-5 mt-4 text-lg`}
+          className={`flex flex-row gap-2 lg:gap-5 mt-4 lg:text-lg`}
         />
       </div>
     </div>
