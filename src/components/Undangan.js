@@ -4,10 +4,10 @@ const Undangan = () => {
   return (
     <section id="undangan" className="bg-bgDefault p-2 md:pb-20">
       <div>
-        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-6 sm:ml-0">Undangan dan Acara</h1>
+        <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-6 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Undangan dan Acara</h1>
       </div>
 
-      <div className="w-[57%] sm:w-full lg:w-[89%] xl:w-full grid sm:grid-cols-2 gap-2 lg:gap-6 xl:gap-8 mt-2 sm:mt-6 pb-6 lg:pb-0 mb-6">
+      <div className="lg:w-[89%] xl:w-full grid sm:grid-cols-2 gap-2 lg:gap-6 xl:gap-8 mt-2 sm:mt-6 pb-6 lg:pb-0 mb-6">
         <div className="flex flex-col py-6 bg-white shadow-md justify-evenly text-center leading-relaxed ">
           <h4 className="underline font-bold mb-4">Akad Nikah</h4>
           <h4 className="font-bold">08:00 - selesai</h4>

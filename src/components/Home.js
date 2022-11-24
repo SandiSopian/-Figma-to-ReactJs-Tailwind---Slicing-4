@@ -3,7 +3,7 @@ import logoMail from "../assets/mail.svg";
 
 const Home = () => {
   return (
-    <section id="home" className="w-[60%] sm:w-full">
+    <section id="home">
       <div className="h-screen overflow-hidden bg-img bg-cover bg-center flex flex-col text-center lg:-ml-24 xl:ml-0">
         <div className="flex flex-col justify-center text-center items-center mt-40 lg:mt-36">
           <h1 className="text-6xl sm:text-8xl font-titleFont">Rika & Yuuta</h1>
@@ -65,8 +65,8 @@ const Home = () => {
     }, []);
     return (
       <div>
-        <div className="row">
-          <ul className="flex gap-2 lg:gap-10 mt-32 lg:mt-24 flex-wrap ">
+        <div className="row w-[50%] sm:w-full">
+          <ul className="flex  gap-1 sm:gap-6 lg:gap-10 mt-32 lg:mt-24">
             <li className="bg-white py-4 px-6  rounded-md shadow-lg font-bold">
               <span id="days"></span>
               <p>Hari</p>
