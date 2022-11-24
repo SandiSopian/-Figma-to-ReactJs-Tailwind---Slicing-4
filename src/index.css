@@ -10,3 +10,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
