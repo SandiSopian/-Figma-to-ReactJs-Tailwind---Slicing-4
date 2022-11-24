@@ -5,7 +5,7 @@ const DoaDanUcapan = () => {
   return (
     <section id="doadanucapan" className="p-2">
       <div>
-        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-12 sm:ml-0">Doa dan Ucapan</h1>
+        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-16 sm:ml-0">Doa dan Ucapan</h1>
       </div>
 
       {/* Card Ucapan */}

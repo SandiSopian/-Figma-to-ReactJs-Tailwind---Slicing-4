@@ -33,70 +33,68 @@ const KirimUcapan = () => {
 
   return (
     <section id="kirimdoadanucapan" className="bg-bgDefault h-screen p-2">
-      <div className="lg:ml-[250px]">
+      <div>
+        <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-2 sm:mt-4 xl:mt-8 ml-4 sm:ml-0">Kirim Do'a dan Ucapan</h1>
+      </div>
+
+      <div className="mb-1 ">
+        <h4>Tuliskan sesuatu ucapan berupa harapan ataupun doa untuk kedua mempelai.</h4>
+      </div>
+
+      <form className="container flex flex-col md:scale-110 lg:scale-100 xl:scale-110 md:ml-12 lg:ml-0 xl:ml-16 md:mt-10 lg:mt-0 xl:mt-8" onSubmit={handlesubmit}>
+        {/* Input Id */}
+        <input value={id} disabled="disabled" className="hidden"></input>
+        {/* Input Nama */}
+        <label>Nama</label>
         <div>
-          <h1 className="font-titleFont text-titleColor text-4xl m-2">Kirim Do'a dan Ucapan</h1>
+          <input maxLength={50} type="text" required value={nama} onMouseDown={(e) => setValidation(true)} onChange={(e) => setNama(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Tulis nama lengkap"></input>
         </div>
-
-        <div className="mb-1">
-          <h4>Tuliskan sesuatu ucapan berupa harapan ataupun doa untuk kedua mempelai.</h4>
+        {/* Input Alamat */}
+        <label>Alamat</label>
+        <div>
+          <input maxLength={25} type="text" required value={alamat} onMouseDown={(e) => setValidation(true)} onChange={(e) => setAlamat(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Alamat anda"></input>
         </div>
-
-        <form className="container flex flex-col" onSubmit={handlesubmit}>
-          {/* Input Id */}
-          <input value={id} disabled="disabled" className="hidden"></input>
-          {/* Input Nama */}
-          <label>Nama</label>
-          <div>
-            <input maxLength={50} type="text" required value={nama} onMouseDown={(e) => setValidation(true)} onChange={(e) => setNama(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Tulis nama lengkap"></input>
-          </div>
-          {/* Input Alamat */}
-          <label>Alamat</label>
-          <div>
-            <input maxLength={25} type="text" required value={alamat} onMouseDown={(e) => setValidation(true)} onChange={(e) => setAlamat(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Alamat anda"></input>
-          </div>
-          {/* Input Email */}
-          <label>Email</label>
-          <div>
-            <input maxLength={100} type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Alamat email (optional)"></input>
-          </div>
-          {/* Input Tanggal */}
-          <input value={tanggal} disabled="disabled" onChange={(e) => setTanggal(e.target.value)} className="hidden"></input>
-          {/* Input Pesan */}
-          <label>Pesan</label>
-          <div>
-            <textarea
-              maxLength={350}
-              type="text"
-              required
-              value={pesan}
-              onMouseDown={(e) => setValidation(true)}
-              onChange={(e) => setPesan(e.target.value)}
-              className="bg-white border-2 p-2 w-[600px] h-full"
-              placeholder="Tuliskan ucapan atau doa untuk kedua mempelai"
-            ></textarea>
-          </div>
-          {/* Input Kehadiran */}
-          <div className="mt-2 leading-loose">
-            <label>Apakah anda akan hadir memenuhi undangan saya?</label>
-            <div className="flex gap-24">
-              <div>
-                <input type="radio" id="hadir" name="radioGroup" value={kehadiran === "hadir"} onChange={(e) => setKehadiran(e.target.value)} />
-                <label for="hadir"> Saya akan hadir</label>
-              </div>
-              <div>
-                <input type="radio" id="tidakhadir" name="radioGroup" value={kehadiran === "tidak hadir"} onChange={(e) => setKehadiran(e.target.value)} />
-                <label for="tidakhadir"> Belum bisa hadir</label>
-              </div>
+        {/* Input Email */}
+        <label>Email</label>
+        <div>
+          <input maxLength={100} type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-white border-2 p-2 w-[300px]" placeholder="Alamat email (optional)"></input>
+        </div>
+        {/* Input Tanggal */}
+        <input value={tanggal} disabled="disabled" onChange={(e) => setTanggal(e.target.value)} className="hidden"></input>
+        {/* Input Pesan */}
+        <label>Pesan</label>
+        <div>
+          <textarea
+            maxLength={350}
+            type="text"
+            required
+            value={pesan}
+            onMouseDown={(e) => setValidation(true)}
+            onChange={(e) => setPesan(e.target.value)}
+            className="bg-white border-2 p-2 w-[300px] sm:w-[600px] h-full"
+            placeholder="Tuliskan ucapan atau doa untuk kedua mempelai"
+          ></textarea>
+        </div>
+        {/* Input Kehadiran */}
+        <div className="mt-2 leading-loose">
+          <label>Apakah anda akan hadir memenuhi undangan saya?</label>
+          <div className="flex gap-24">
+            <div>
+              <input type="radio" id="hadir" name="radioGroup" value={kehadiran === "hadir"} onChange={(e) => setKehadiran(e.target.value)} />
+              <label for="hadir"> Saya akan hadir</label>
+            </div>
+            <div>
+              <input type="radio" id="tidakhadir" name="radioGroup" value={kehadiran === "tidak hadir"} onChange={(e) => setKehadiran(e.target.value)} />
+              <label for="tidakhadir"> Belum bisa hadir</label>
             </div>
           </div>
-          <div className="-ml-6 mb-8">
-            <button type="submit" className="bg-[#8CA4B9] py-4 px-16 flex gap-2 rounded-lg text-white m-6 hover:opacity-50">
-              Kirim
-            </button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div className="-ml-6 mb-8">
+          <button type="submit" className="bg-[#8CA4B9] py-4 px-16 flex gap-2 rounded-lg text-white m-6 hover:opacity-50">
+            Kirim
+          </button>
+        </div>
+      </form>
     </section>
   );
 };
