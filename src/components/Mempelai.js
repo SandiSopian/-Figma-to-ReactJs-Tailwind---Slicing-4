@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import bismillah from "../assets/bismillah-img.png";
 import profile1 from "../assets/Ellipse1.png";
 import profile2 from "../assets/Ellipse2.png";
 import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 const Mempelai = () => {
   return (
@@ -25,65 +24,53 @@ const Mempelai = () => {
       </div>
 
       <div className="lg:ml-6 xl:ml-12 md:gap-6 sm:mt-2 flex flex-col sm:flex-row flex-shrink items-center justify-evenly">
-        <TrackVisibility>
-          {({ isVisible }) =>
-            isVisible && (
-              <div className="animate__animated animate__fadeInLeft">
-                <div className="flex border my-2 bg-white shadow-md rounded-sm pr-6 py-2 ">
-                  <div className="w-8/12 flex flex-col m-2 text-end">
-                    <p className="font-semibold font-mono text-xl">Rika Takanashi S.E</p>
-                    <p className="font-titleFont text-titleColor text-2xl">Rika</p>
-                    <div className="font-mono">
-                      <p>Sarjana Ekonomi yang</p>
-                      <p>berprofesi di bidang property</p>
-                    </div>
-                    <div className="flex justify-end gap-6 mt-6">
-                      <a href="https://www.twitter.com">
-                        <img src={twitter} alt="" />
-                      </a>
-                      <a href="https://www.instagram.com">
-                        <img src={instagram} alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-4/12">
-                    <img src={profile1} alt="" />
-                  </div>
-                </div>
+        <div className="animate__animated animate__fadeInLeft">
+          <div className="flex border my-2 bg-white shadow-md rounded-sm pr-6 py-2 ">
+            <div className="w-8/12 flex flex-col m-2 text-end">
+              <p className="font-semibold font-mono text-xl">Rika Takanashi S.E</p>
+              <p className="font-titleFont text-titleColor text-2xl">Rika</p>
+              <div className="font-mono">
+                <p>Sarjana Ekonomi yang</p>
+                <p>berprofesi di bidang property</p>
               </div>
-            )
-          }
-        </TrackVisibility>
+              <div className="flex justify-end gap-6 mt-6">
+                <a href="https://www.twitter.com">
+                  <img src={twitter} alt="" />
+                </a>
+                <a href="https://www.instagram.com">
+                  <img src={instagram} alt="" />
+                </a>
+              </div>
+            </div>
+            <div className="w-4/12">
+              <img src={profile1} alt="" />
+            </div>
+          </div>{" "}
+        </div>
 
-        <TrackVisibility>
-          {({ isVisible }) =>
-            isVisible && (
-              <div className="animate__animated animate__fadeInRight">
-                <div className="flex border my-2 bg-white shadow-md rounded-sm pl-6 py-2">
-                  <div className="w-4/12">
-                    <img src={profile2} alt="" />
-                  </div>
-                  <div className="w-8/12 flex flex-col m-2 text-start">
-                    <p className="font-semibold font-mono text-xl">Yuuta Hoshi S.E</p>
-                    <p className="font-titleFont text-titleColor text-2xl">Yuuta</p>
-                    <div className="font-mono">
-                      <p>Sarjana Ekonomi yang</p>
-                      <p>berprofesi di bidang property</p>
-                    </div>
-                    <div className="flex justify-start gap-6 mt-6">
-                      <a href="https://www.instagram.com">
-                        <img src={instagram} alt="" />
-                      </a>
-                      <a href="https://www.twitter.com">
-                        <img src={twitter} alt="" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+        <div className="animate__animated animate__fadeInRight">
+          <div className="flex border my-2 bg-white shadow-md rounded-sm pl-6 py-2">
+            <div className="w-4/12">
+              <img src={profile2} alt="" />
+            </div>
+            <div className="w-8/12 flex flex-col m-2 text-start">
+              <p className="font-semibold font-mono text-xl">Yuuta Hoshi S.E</p>
+              <p className="font-titleFont text-titleColor text-2xl">Yuuta</p>
+              <div className="font-mono">
+                <p>Sarjana Ekonomi yang</p>
+                <p>berprofesi di bidang property</p>
               </div>
-            )
-          }
-        </TrackVisibility>
+              <div className="flex justify-start gap-6 mt-6">
+                <a href="https://www.instagram.com">
+                  <img src={instagram} alt="" />
+                </a>
+                <a href="https://www.twitter.com">
+                  <img src={twitter} alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

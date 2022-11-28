@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Pagination from "./Pagination";
+import PaginationJsonSvr from "./PaginationJsonSvr";
+import PaginationGSApi from "./PaginationGSApi";
 
 const DoaDanUcapan = () => {
   return (
@@ -10,7 +11,8 @@ const DoaDanUcapan = () => {
 
       {/* Card Ucapan */}
       <div>
-        <Pagination />
+        {/* <PaginationJsonSvr />  */}
+        <PaginationGSApi />
       </div>
 
       <div className="sm:flex sm:justify-center lg:m-4 ml-12 sm:ml-0 lg:mr-28 xl:mr-0">

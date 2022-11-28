@@ -3,7 +3,7 @@ import ReactPaginate from "react-paginate";
 
 const PER_PAGE = 4;
 
-export default function Pagination() {
+export default function PaginationJsonSvr() {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState([]);
 
@@ -33,7 +33,7 @@ export default function Pagination() {
       <div key={item.id} className="bg-bgDefault w-[340px] sm:w-[300px] md:w-[365px] xl:w-[480px] p-4 mx-auto border shadow-lg rounded-md leading-relaxed ">
         <div className="font-bold text-xl">{item.nama}</div>
         <div className="text-titleColor">
-          <span className="text-black">di</span> {item.lokasi}
+          <span className="text-black">di</span> {item.alamat}
         </div>
         <div className="italic">{item.tanggal}</div>
         <div className="font-semibold mt-4">"{item.pesan}"</div>

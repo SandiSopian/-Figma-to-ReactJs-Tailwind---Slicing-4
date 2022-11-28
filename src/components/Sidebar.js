@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [open, setOpen] = useState(true);
   return (
     <nav className="p-0 ">
-      <div className={`${open ? "left-0 w-[250px] " : "-left-full hidden lg:block "} scale-100 lg:left-0 duration-700 `}>
+      <div className={`${!open ? "left-0 w-[250px]" : "-left-full hidden lg:block "} scale-100 lg:left-0 duration-700 `}>
         <div className="w-[250px] flex flex-col text-center items-center justify-center m-auto bg-white lg:gap-0">
           <img src={logo} alt="logo-butterfly" className="w-[40%] mt-10" />
           <h1 className="font-titleFont text-4xl text-titleColor mt-4">Rika & Yuuta</h1>
