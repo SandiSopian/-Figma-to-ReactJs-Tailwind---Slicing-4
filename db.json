@@ -15,6 +15,22 @@
       "tanggal": "jumat, 12 nov 2022",
       "email": "",
       "pesan": "selamat ya anjir"
+    },
+    {
+      "id": 3,
+      "nama": "Pertamax",
+      "alamat": "Pom bensin",
+      "tanggal": "jumat, 12 nov 2022",
+      "email": "",
+      "pesan": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum pariatur nihil dolores dicta aliquam illo id dignissimos error veniam recusandae nam doloribus eius aspernatur, reprehenderit voluptatum quasi itaque commodi dolore provident possimus corrupti, repellat rerum natus alias? Sint, voluptatibus at, cupiditate laborum tenetur labore officia molestias ipsum, ipsam earum dicta?"
+    },
+    {
+      "id": 4,
+      "nama": "Hirman",
+      "alamat": "Ujung Kulon",
+      "tanggal": "jumat, 12 nov 2022",
+      "email": "",
+      "pesan": "selamat ya anjir"
     }
   ]
 }

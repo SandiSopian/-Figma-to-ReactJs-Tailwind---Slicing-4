@@ -34,7 +34,7 @@ const PaginationGSApi = () => {
   const currentPageData =
     data &&
     data?.slice(offset, offset + PER_PAGE).map((item) => (
-      <div key={item.i} className="bg-bgDefault w-[340px] sm:w-[300px] md:w-[365px] xl:w-[480px] p-4 mx-auto border shadow-lg rounded-md leading-relaxed ">
+      <div key={item.i} className="bg-bgDefault w-[340px] sm:w-[300px] md:w-[365px] lg:w-[100px] xl:w-[480px] p-4 mx-auto border shadow-lg rounded-md leading-relaxed ">
         <div className="font-bold text-xl">{item.nama}</div>
         <div className="text-titleColor">
           <span className="text-black">di</span> {item.alamat}

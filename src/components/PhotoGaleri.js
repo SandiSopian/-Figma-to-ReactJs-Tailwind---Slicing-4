@@ -6,12 +6,12 @@ import galleri4 from "../assets/photogaleri4.png";
 
 const PhotoGaleri = () => {
   return (
-    <section id="photogaleri" className="bg-bgDefault p-2">
+    <section id="photogaleri" className="bg-bgDefault p-2 md:pt-2 lg:pt-4 ">
       <div>
-        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-24 sm:ml-0">Photo Galeri</h1>
+        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 sm:mb-2 md:mb-0 ml-24 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Photo Galeri</h1>
       </div>
 
-      <div>
+      <div className="sm:px-6 lg:px-0">
         <h4>Sebagian kenangan kami yang diabadikan dalam photo-photo penuh kebahagiaan</h4>
       </div>
 

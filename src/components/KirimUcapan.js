@@ -69,17 +69,17 @@ const KirimUcapan = () => {
   // };
 
   return (
-    <section id="kirimdoadanucapan" className="bg-bgDefault h-screen p-2">
+    <section id="kirimdoadanucapan" className="bg-bgDefault h-screen px-2 pt-2 pb-0 md:pt-8 lg:pt-4">
       <div>
-        <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-2 sm:mt-4 xl:mt-8 ml-4 sm:ml-0">Kirim Do'a dan Ucapan</h1>
+        <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-2 sm:mt-4 xl:mt-8 sm:mb-2 md:mb-2 lg:mb-0 ml-4 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Kirim Do'a dan Ucapan</h1>
       </div>
 
-      <div className="mb-1 ">
+      <div className="mb-1 md:px-6 lg:px-0">
         <h4>Tuliskan sesuatu ucapan berupa harapan ataupun doa untuk kedua mempelai.</h4>
       </div>
 
       {/*  -----Form input using Google Sheet API----- */}
-      <form className="container flex flex-col md:scale-110 lg:scale-100 xl:scale-110 md:ml-12 lg:ml-0 xl:ml-16 md:mt-10 lg:mt-0 xl:mt-8" onSubmit={handleSubmit}>
+      <form className="container flex flex-col md:mt-10 lg:mt-0 xl:mt-8 md:px-6 lg:px-0" onSubmit={handleSubmit}>
         {/* Input Nama */}
         <label>Nama</label>
         <div>
@@ -125,7 +125,7 @@ const KirimUcapan = () => {
             </div>
           </div>
         </div>
-        <div className="-ml-6 mb-8">
+        <div className="-ml-6 mb-8 lg:mb-0">
           <button type="submit" className="bg-[#8CA4B9] py-4 px-16 flex gap-2 rounded-lg text-white m-6 hover:opacity-50">
             Kirim
           </button>

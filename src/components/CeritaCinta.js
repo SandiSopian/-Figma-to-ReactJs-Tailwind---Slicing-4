@@ -3,8 +3,8 @@ import ceritaimg from "../assets/ceritacinta.png";
 
 const CeritaCinta = () => {
   return (
-    <section id="ceritacinta" className="p-2 xl:p-4">
-      <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-24 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Cerita Cinta</h1>
+    <section id="ceritacinta" className="p-2 sm:pt-8 sm:pb-24 lg:pt-4 xl:px-4 xl:py-2">
+      <h1 className="font-titleFont text-titleColor text-4xl xl:mx-2 mt-0 md:mt-4 xl:mt-8 sm:mb-4 md:mb-0 ml-20 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Cerita Cinta</h1>
       <div className="grid sm:grid-cols-2 gap-4 md:gap-8 lg:gap-0 xl:gap-2 p-2 lg:w-[90%] xl:w-full md:mt-10 lg:mt-0 md:mb-28 lg:mb-0">
         <div className="bg-bgDefault shadow-md rounded p-4 xl:text-base">
           <p className="font-semibold text-lg">Pertama Kali Berjumpa</p>

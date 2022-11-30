@@ -4,14 +4,14 @@ import PaginationGSApi from "./PaginationGSApi";
 
 const DoaDanUcapan = () => {
   return (
-    <section id="doadanucapan" className="p-2">
+    <section id="doadanucapan" className="p-2 md:pt-2 lg:pt-4">
       <div>
-        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-16 sm:ml-0">Doa dan Ucapan</h1>
+        <h1 className="font-titleFont text-titleColor text-4xl mx-0 xl:mx-2 mt-0 sm:mt-4 xl:mt-8 ml-16 sm:ml-0 sm:flex lg:flex-none sm:justify-center lg:justify-start">Doa dan Ucapan</h1>
       </div>
 
       {/* Card Ucapan */}
       <div>
-        {/* <PaginationJsonSvr />  */}
+        {/* <PaginationJsonSvr /> */}
         <PaginationGSApi />
       </div>
 
